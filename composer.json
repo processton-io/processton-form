@@ -1,0 +1,55 @@
+{
+    "name": "processton-io/processton-form",
+    "description": "This package will generate forms",
+    "version": "1.0.0",
+    "keywords": [
+        "processton",
+        "processton-form"
+    ],
+    "homepage": "https://github.com/processton-io/processton-form",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Ahmad Faryab Kokab",
+            "email": "ahmadkokab@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0|^8.1",
+        "processton-io/processton-interaction": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Processton\\ProcesstonForm\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Processton\\ProcesstonForm\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Processton\\ProcesstonForm\\ProcesstonFormServiceProvider"
+            ],
+            "aliases": {
+                "ProcesstonForm": "Processton\\ProcesstonForm\\ProcesstonFormFacade"
+            }
+        }
+    }
+}

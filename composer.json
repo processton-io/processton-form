@@ -1,7 +1,7 @@
 {
     "name": "processton-io/processton-form",
     "description": "This package will generate forms",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "keywords": [
         "processton",
         "processton-form"

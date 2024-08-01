@@ -62,13 +62,15 @@ class ProcesstonForm
 
     }
 
-    public static function generateFormSchema($title, $type, $rows = [], $name = ''){
+    public static function generateFormSchema($title, $type, $rows = [], $name = '', $before_form = null, $after_form = null){
 
         return [
             'name' => $name ? $name : $title,
             'title' => $title,
             'type' => $type,
-            'rows' => $rows
+            'rows' => $rows,
+            'before_form' => $before_form,
+            'after_form' => $after_form
         ];
 
     }

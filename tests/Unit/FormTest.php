@@ -224,7 +224,9 @@ class FormTest extends TestCase
             'name' => 'Title',
             'title' => 'Title',
             'type' => 'form',
-            'rows' => []
+            'rows' => [],
+            'before_form' => null,
+            'after_form' => null
         ];
 
         $this->assertEquals($expected, $content);
